@@ -8,3 +8,5 @@ for i in range(0,29_999,10):
     with open(string,'wb') as f:
         pickle.dump(pincode,f)
         f.close()
+    with open(string+'.lock','wb') as f:
+        f.close()
