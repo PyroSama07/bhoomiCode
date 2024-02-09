@@ -9,12 +9,12 @@ bc = BhoomiCodeSeller()
 @app.post('/addValue')
 async def add(pincode: int = Form(...),seller: int = Form(...),value: int = Form(...)):
     bc.add_value(pincode,seller,value)
-    return
+    return True
 
 @app.post('/deleteValue')
 async def delete(pincode: int = Form(...),seller: int = Form(...)):
     bc.add_value(pincode,seller)
-    return
+    return True
 
 # print(bc.get_sellers(1))
 

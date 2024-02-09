@@ -8,13 +8,13 @@ bc = BhoomiCodeBuyer()
 
 @app.get('/seller/{pincode}')
 def sellers(pincode: int):
-    seller_dict = bc.get_sellers(pincode)
-    return seller_dict
+    return bc.get_sellers(pincode)
+    # return seller_dict
 
 @app.get('/value/{pincode}/{seller_id}')
 def sellers(pincode: int, seller_id: int):
-    value = bc.get_value(pincode,seller_id)
-    return value
+    return bc.get_value(pincode,seller_id)
+    # return value
 
 # print(bc.get_sellers(1))
 
