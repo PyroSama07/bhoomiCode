@@ -5,7 +5,6 @@ app = FastAPI()
 sys.path.append('utils/')
 from bhoomicode_buyer import BhoomiCodeBuyer
 bc = BhoomiCodeBuyer()
-print(bc.get_sellers(78))
 
 @app.get('/seller/{pincode}')
 def sellers(pincode: int):
