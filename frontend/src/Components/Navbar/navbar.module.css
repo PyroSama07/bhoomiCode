@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+.container{
+	display: flex;
+	height: 4.5rem;
+	padding-inline: 2vw;
+	gap: 0.5rem;
+	z-index: 3;
+	align-items: center;
+	background-color: white;
+	box-shadow: 2.660855770111084px 3.991283655166626px 9.978209495544434px rgba(0, 0, 0, 0.25);
+}

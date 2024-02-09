@@ -1,0 +1,43 @@
+
+.container{
+	height: 90vh;
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+  }
+
+  .image{
+	height: 60vh;
+	display: flex;
+	align-self: center;
+  }
+
+  .loginform{
+	display: flex;
+	align-items: center;
+	width: 30%;
+  }
+
+  .formm{
+	display: flex;
+	flex-direction: column;
+	width: 100% ;
+  }
+
+  .formm input{
+	padding: 0.75rem 3.5rem;
+	margin-bottom: 2rem;
+  }
+
+  .formm button{
+	margin-top:1rem ;
+	background-color: #5DB9E8;
+	border:  none ;
+	padding: 1rem 1rem;
+	color: white;
+	border-radius: 10px;
+  }
+
+
