@@ -1,7 +1,8 @@
 import pickle
 import os
 
-os.mkdir('pincodes/')
+if not os.path.exists('pincodes/'):
+    os.makedirs('pincodes/')
 pincode = {}
 pincode_in_one_file = 10
 for i in range(0,29_999,pincode_in_one_file):

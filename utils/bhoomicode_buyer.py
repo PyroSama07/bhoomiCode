@@ -28,11 +28,11 @@ class BhoomiCodeBuyer:
         self.__current_file = file_name
         
     def __save_file(self):
-        # lock = FileLock(self.__current_file+'.lock')
-        # with lock:
-        with open(self.__current_file, 'wb') as f:
-            pickle.dump(self.__pincodes, f)
-            f.close()
+        lock = FileLock(self.__current_file+'.lock')
+        with lock:
+            with open(self.__current_file, 'wb') as f:
+                pickle.dump(self.__pincodes, f)
+                f.close()
         
     def get_sellers(self,pincode):
         self.__load_file(pincode)
