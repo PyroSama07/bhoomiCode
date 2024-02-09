@@ -2,3 +2,4 @@
 __pycache__
 pincodes
 *.ipynb
+backend/test.py
