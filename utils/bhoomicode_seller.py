@@ -46,3 +46,6 @@ class BhoomiCodeSeller:
         if self.__pincodes[pincode].get(seller) == None:
             return
         del self.__pincodes[pincode][seller]
+
+    def sync(self):
+        self.__save_file()

@@ -16,6 +16,10 @@ async def delete(pincode: int = Form(...),seller: int = Form(...)):
     bc.add_value(pincode,seller)
     return True
 
+@app.post('/sync')
+async def sync_values():
+    bc.sync()
+    return True
 # print(bc.get_sellers(1))
 
 if __name__ == "__main__":
