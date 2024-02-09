@@ -18,5 +18,5 @@ def sellers(pincode: int, seller_id: int):
 
 # print(bc.get_sellers(1))
 
-if __name__ == "__main__":
-    uvicorn.run("buyer:app",reload = True,host="127.0.0.1",port=1305)
+# if __name__ == "__main__":
+#     uvicorn.run("buyer:app",reload = True,host="127.0.0.1",port=1305)

@@ -22,5 +22,5 @@ async def sync_values():
     return True
 # print(bc.get_sellers(1))
 
-if __name__ == "__main__":
-    uvicorn.run("seller:app",reload = True,host="127.0.0.1",port=1306)
+# if __name__ == "__main__":
+#     uvicorn.run("seller:app",reload = True,host="127.0.0.1",port=1306)
