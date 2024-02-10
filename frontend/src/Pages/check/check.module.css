@@ -1,5 +1,5 @@
 .container {
-	height: 90vh;
+	height: auto;
 	width: 85%;
 	margin: 0 auto;
 	display: flex;
@@ -48,6 +48,7 @@
 	width: 80%;
 	border-collapse: collapse;
 	margin-bottom: 50px;
+	margin-top: 10px;
 }
 
 .table th,

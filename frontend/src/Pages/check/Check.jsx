@@ -74,7 +74,14 @@ const Buyer = () => {
           </form>
         </div>
         <div className={styles.image}>
-          <img src={adhikaarImage} alt="adhikaarImage" />
+          <img
+            style={{
+              marginTop: "2%",
+              marginLeft: "5%",
+            }}
+            src={adhikaarImage}
+            alt="adhikaarImage"
+          />
         </div>
       </div>
       {result && (
