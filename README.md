@@ -30,9 +30,9 @@ Install the required packages for the project.
   pipenv install
 ```
 
-Now start Seller and Buyer seperatly
+Now start Seller and Buyer seperatly.  
+uncomment line 34,35 in backend/buyer.py and line 38,39 in backend/seller.py.
 
-uncomment line 34,35 in backend/buyer.py and line 38,39 in backend/seller.py
 
 ```bash
   python3 backend/buyer.py
@@ -50,3 +50,27 @@ To start the front end application, in new command line terminal run
   npm run dev
 ```
 Navigate to http://locahost:5173
+
+## Docker Deployment
+
+Install Docker (`sudo apt install docker docker.io`).  
+Clone this repository.
+
+```bash
+  git clone https://github.com/PyroSama07/bhoomiCode.git
+```
+
+Install the required packages for the project.
+
+```bash
+  cd bhoomiCode
+  chmod +x start.sh
+  ./start.sh
+```
+Navigate to http://localhost:3000
+
+## Customize for dense Sparse Matrix
+In utils/create_files.py change the pincode_in_one_file to the desired value in line 8.  
+In line 31 get_seller(number_of_seller_per_pincode) to generate the desired test dataset.  
+Comment all code from line 22 to not load the test file.  
+
