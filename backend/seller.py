@@ -1,6 +1,19 @@
 import sys, uvicorn
 from fastapi import FastAPI, Form
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
+
+origins = [
+    "http://localhost:1305",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins="*",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 sys.path.append('utils/')
 from bhoomicode_seller import BhoomiCodeSeller
