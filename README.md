@@ -1,3 +1,5 @@
+![Logo](frontend/src/assets/BhoomiCode_White.png)
+
 # Problem Name
  Optimal storage & retrieval in m*n sparse matrix 
 
