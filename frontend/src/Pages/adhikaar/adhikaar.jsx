@@ -5,7 +5,7 @@ import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const baseURL = "http://localhost:1306";
+const baseURL = "http://34.126.213.168:1306";
 
 const Adhikaar = () => {
   const [view, setView] = useState("add");
