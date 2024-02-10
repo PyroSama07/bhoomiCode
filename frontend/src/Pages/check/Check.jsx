@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const baseURL = "http://localhost:1305";
 
-const Check = () => {
+const Buyer = () => {
   const [pincode, setPincode] = useState("");
   const [sellerId, setSellerId] = useState("");
   const [result, setResult] = useState(null);
@@ -108,4 +108,4 @@ const Check = () => {
   );
 };
 
-export default Check;
+export default Buyer;
