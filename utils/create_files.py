@@ -12,3 +12,8 @@ for i in range(0,29_999,pincode_in_one_file):
         f.close()
     with open(string+'.lock','wb') as f:
         f.close()
+        
+empty_dict = {}
+with open('pincodes/first_open.pkl','wb') as f:
+    pickle.dump(empty_dict,f)
+    f.close()

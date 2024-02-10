@@ -3,3 +3,4 @@ __pycache__
 pincodes
 *.ipynb
 .vscode
+backend/test.py

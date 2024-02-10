@@ -5,14 +5,15 @@ from filelock import FileLock
 class BhoomiCodeSeller:
     def __init__(self):
         self.__pincode_lookup = {}
-        self.__current_file = ""
+        self.__current_file = "pincodes/first_open.pkl"
         self.__pincodes = {}
         for file in os.listdir('pincodes/'):
-            elements = file.split('.')
-            if ('lock' not in elements):
-                range_num = [int(num) for num in elements[1].split('_')]
-                for pincode in range(range_num[0],range_num[1]+1):
-                    self.__pincode_lookup[pincode]='pincodes/'+file
+            if file != "first_open.pkl":
+                elements = file.split('.')
+                if ('lock' not in elements):
+                    range_num = [int(num) for num in elements[1].split('_')]
+                    for pincode in range(range_num[0],range_num[1]+1):
+                        self.__pincode_lookup[pincode]='pincodes/'+file
     
     def __load_file(self,pincode):
         file_name = self.__pincode_lookup[pincode]

@@ -26,7 +26,7 @@ async def add(pincode: int = Form(...),seller: int = Form(...),value: int = Form
 
 @app.post('/deleteValue')
 async def delete(pincode: int = Form(...),seller: int = Form(...)):
-    bc.add_value(pincode,seller)
+    bc.delete_value(pincode,seller)
     return True
 
 @app.post('/sync')
