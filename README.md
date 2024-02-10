@@ -35,11 +35,16 @@ uncomment line 34,35 in backend/buyer.py and line 38,39 in backend/seller.py
 ```bash
   python3 backend/buyer.py
 ```
-Navigate to http://localhost:1305
 
 In spereate command line terminal
 ```bash
   python3 backend/seller.py
 ```
-Navigate to http://localhost:1306
 
+To start the front end application, in new command line terminal run
+```bash
+  cd frontend
+  npm install
+  npm run dev
+```
+Navigate to http://locahost:5173
