@@ -72,5 +72,5 @@ Navigate to http://localhost:3000
 ## Customize for dense Sparse Matrix
 In utils/create_files.py change the pincode_in_one_file to the desired value in line 8.  
 In line 31 get_seller(number_of_seller_per_pincode) to generate the desired test dataset.  
-Comment all code from line 22 to not load the test file.  
+Comment all code from line 22 to not load the test file. 
 
